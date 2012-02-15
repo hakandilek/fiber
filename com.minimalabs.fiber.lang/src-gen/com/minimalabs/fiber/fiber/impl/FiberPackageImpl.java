@@ -8,6 +8,7 @@ package com.minimalabs.fiber.fiber.impl;
 
 import com.minimalabs.fiber.fiber.Attribute;
 import com.minimalabs.fiber.fiber.AttributeManyReference;
+import com.minimalabs.fiber.fiber.ClassType;
 import com.minimalabs.fiber.fiber.Enumeration;
 import com.minimalabs.fiber.fiber.EnumerationLiteral;
 import com.minimalabs.fiber.fiber.FiberFactory;
@@ -49,6 +50,13 @@ public class FiberPackageImpl extends EPackageImpl implements FiberPackage
    * @generated
    */
   private EClass typeEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass classTypeEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -238,6 +246,16 @@ public class FiberPackageImpl extends EPackageImpl implements FiberPackage
    * <!-- end-user-doc -->
    * @generated
    */
+  public EClass getClassType()
+  {
+    return classTypeEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EClass getSimpleType()
   {
     return simpleTypeEClass;
@@ -288,7 +306,7 @@ public class FiberPackageImpl extends EPackageImpl implements FiberPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getClass_SuperEntity()
+  public EReference getClass_SuperTypes()
   {
     return (EReference)classEClass.getEStructuralFeatures().get(0);
   }
@@ -540,6 +558,8 @@ public class FiberPackageImpl extends EPackageImpl implements FiberPackage
     typeEClass = createEClass(TYPE);
     createEAttribute(typeEClass, TYPE__NAME);
 
+    classTypeEClass = createEClass(CLASS_TYPE);
+
     simpleTypeEClass = createEClass(SIMPLE_TYPE);
     createEReference(simpleTypeEClass, SIMPLE_TYPE__MAPPED_TYPE);
 
@@ -547,7 +567,7 @@ public class FiberPackageImpl extends EPackageImpl implements FiberPackage
     createEAttribute(typeIdEClass, TYPE_ID__NAME);
 
     classEClass = createEClass(CLASS);
-    createEReference(classEClass, CLASS__SUPER_ENTITY);
+    createEReference(classEClass, CLASS__SUPER_TYPES);
     createEReference(classEClass, CLASS__ATTRIBUTES);
 
     attributeEClass = createEClass(ATTRIBUTE);
@@ -608,8 +628,9 @@ public class FiberPackageImpl extends EPackageImpl implements FiberPackage
     // Set bounds for type parameters
 
     // Add supertypes to classes
-    simpleTypeEClass.getESuperTypes().add(this.getType());
-    classEClass.getESuperTypes().add(this.getType());
+    classTypeEClass.getESuperTypes().add(this.getType());
+    simpleTypeEClass.getESuperTypes().add(this.getClassType());
+    classEClass.getESuperTypes().add(this.getClassType());
     enumerationEClass.getESuperTypes().add(this.getType());
 
     // Initialize classes and features; add operations and parameters
@@ -620,6 +641,8 @@ public class FiberPackageImpl extends EPackageImpl implements FiberPackage
     initEClass(typeEClass, Type.class, "Type", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getType_Name(), ecorePackage.getEString(), "name", null, 0, 1, Type.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
+    initEClass(classTypeEClass, ClassType.class, "ClassType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
     initEClass(simpleTypeEClass, SimpleType.class, "SimpleType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getSimpleType_MappedType(), this.getTypeId(), null, "mappedType", null, 0, 1, SimpleType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -627,7 +650,7 @@ public class FiberPackageImpl extends EPackageImpl implements FiberPackage
     initEAttribute(getTypeId_Name(), ecorePackage.getEString(), "name", null, 0, 1, TypeId.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(classEClass, com.minimalabs.fiber.fiber.Class.class, "Class", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getClass_SuperEntity(), this.getClass_(), null, "superEntity", null, 0, 1, com.minimalabs.fiber.fiber.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getClass_SuperTypes(), this.getClassType(), null, "superTypes", null, 0, -1, com.minimalabs.fiber.fiber.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getClass_Attributes(), this.getAttribute(), null, "attributes", null, 0, -1, com.minimalabs.fiber.fiber.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(attributeEClass, Attribute.class, "Attribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

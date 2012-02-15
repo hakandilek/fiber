@@ -16,7 +16,7 @@ import org.eclipse.emf.common.util.EList;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link com.minimalabs.fiber.fiber.Class#getSuperEntity <em>Super Entity</em>}</li>
+ *   <li>{@link com.minimalabs.fiber.fiber.Class#getSuperTypes <em>Super Types</em>}</li>
  *   <li>{@link com.minimalabs.fiber.fiber.Class#getAttributes <em>Attributes</em>}</li>
  * </ul>
  * </p>
@@ -25,33 +25,23 @@ import org.eclipse.emf.common.util.EList;
  * @model
  * @generated
  */
-public interface Class extends Type
+public interface Class extends ClassType
 {
   /**
-   * Returns the value of the '<em><b>Super Entity</b></em>' reference.
+   * Returns the value of the '<em><b>Super Types</b></em>' reference list.
+   * The list contents are of type {@link com.minimalabs.fiber.fiber.ClassType}.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Super Entity</em>' reference isn't clear,
+   * If the meaning of the '<em>Super Types</em>' reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Super Entity</em>' reference.
-   * @see #setSuperEntity(Class)
-   * @see com.minimalabs.fiber.fiber.FiberPackage#getClass_SuperEntity()
+   * @return the value of the '<em>Super Types</em>' reference list.
+   * @see com.minimalabs.fiber.fiber.FiberPackage#getClass_SuperTypes()
    * @model
    * @generated
    */
-  Class getSuperEntity();
-
-  /**
-   * Sets the value of the '{@link com.minimalabs.fiber.fiber.Class#getSuperEntity <em>Super Entity</em>}' reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Super Entity</em>' reference.
-   * @see #getSuperEntity()
-   * @generated
-   */
-  void setSuperEntity(Class value);
+  EList<ClassType> getSuperTypes();
 
   /**
    * Returns the value of the '<em><b>Attributes</b></em>' containment reference list.

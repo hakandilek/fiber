@@ -7,7 +7,10 @@ Model:
   (services+=Service)*;
   
 Type:
-  SimpleType|Class|Enumeration;
+  ClassType|Enumeration;
+
+ClassType:
+  SimpleType|Class;
 
 SimpleType:
   "type" name=ID ("is" mappedType=TypeId)?;
@@ -16,7 +19,7 @@ TypeId:
   name=ID ("." ID)*;
 
 Class:
-  "class" name=ID ("extends" superEntity=[Class])? "{" (attributes+=Attribute)* "}";
+  "class" name=ID (":" superTypes+=[ClassType] ("," superTypes+=[ClassType])*)? "{" (attributes+=Attribute)* "}";
 
 Attribute:
   type=[Type] (manyReference=AttributeManyReference)? name=ID;

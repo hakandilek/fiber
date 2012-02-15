@@ -7,11 +7,11 @@
 package com.minimalabs.fiber.fiber.impl;
 
 import com.minimalabs.fiber.fiber.Attribute;
+import com.minimalabs.fiber.fiber.ClassType;
 import com.minimalabs.fiber.fiber.FiberPackage;
 
 import java.util.Collection;
 
-import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
@@ -19,9 +19,8 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
@@ -31,24 +30,24 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link com.minimalabs.fiber.fiber.impl.ClassImpl#getSuperEntity <em>Super Entity</em>}</li>
+ *   <li>{@link com.minimalabs.fiber.fiber.impl.ClassImpl#getSuperTypes <em>Super Types</em>}</li>
  *   <li>{@link com.minimalabs.fiber.fiber.impl.ClassImpl#getAttributes <em>Attributes</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class ClassImpl extends TypeImpl implements com.minimalabs.fiber.fiber.Class
+public class ClassImpl extends ClassTypeImpl implements com.minimalabs.fiber.fiber.Class
 {
   /**
-   * The cached value of the '{@link #getSuperEntity() <em>Super Entity</em>}' reference.
+   * The cached value of the '{@link #getSuperTypes() <em>Super Types</em>}' reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getSuperEntity()
+   * @see #getSuperTypes()
    * @generated
    * @ordered
    */
-  protected com.minimalabs.fiber.fiber.Class superEntity;
+  protected EList<ClassType> superTypes;
 
   /**
    * The cached value of the '{@link #getAttributes() <em>Attributes</em>}' containment reference list.
@@ -86,42 +85,13 @@ public class ClassImpl extends TypeImpl implements com.minimalabs.fiber.fiber.Cl
    * <!-- end-user-doc -->
    * @generated
    */
-  public com.minimalabs.fiber.fiber.Class getSuperEntity()
+  public EList<ClassType> getSuperTypes()
   {
-    if (superEntity != null && superEntity.eIsProxy())
+    if (superTypes == null)
     {
-      InternalEObject oldSuperEntity = (InternalEObject)superEntity;
-      superEntity = (com.minimalabs.fiber.fiber.Class)eResolveProxy(oldSuperEntity);
-      if (superEntity != oldSuperEntity)
-      {
-        if (eNotificationRequired())
-          eNotify(new ENotificationImpl(this, Notification.RESOLVE, FiberPackage.CLASS__SUPER_ENTITY, oldSuperEntity, superEntity));
-      }
+      superTypes = new EObjectResolvingEList<ClassType>(ClassType.class, this, FiberPackage.CLASS__SUPER_TYPES);
     }
-    return superEntity;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public com.minimalabs.fiber.fiber.Class basicGetSuperEntity()
-  {
-    return superEntity;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void setSuperEntity(com.minimalabs.fiber.fiber.Class newSuperEntity)
-  {
-    com.minimalabs.fiber.fiber.Class oldSuperEntity = superEntity;
-    superEntity = newSuperEntity;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, FiberPackage.CLASS__SUPER_ENTITY, oldSuperEntity, superEntity));
+    return superTypes;
   }
 
   /**
@@ -164,9 +134,8 @@ public class ClassImpl extends TypeImpl implements com.minimalabs.fiber.fiber.Cl
   {
     switch (featureID)
     {
-      case FiberPackage.CLASS__SUPER_ENTITY:
-        if (resolve) return getSuperEntity();
-        return basicGetSuperEntity();
+      case FiberPackage.CLASS__SUPER_TYPES:
+        return getSuperTypes();
       case FiberPackage.CLASS__ATTRIBUTES:
         return getAttributes();
     }
@@ -184,8 +153,9 @@ public class ClassImpl extends TypeImpl implements com.minimalabs.fiber.fiber.Cl
   {
     switch (featureID)
     {
-      case FiberPackage.CLASS__SUPER_ENTITY:
-        setSuperEntity((com.minimalabs.fiber.fiber.Class)newValue);
+      case FiberPackage.CLASS__SUPER_TYPES:
+        getSuperTypes().clear();
+        getSuperTypes().addAll((Collection<? extends ClassType>)newValue);
         return;
       case FiberPackage.CLASS__ATTRIBUTES:
         getAttributes().clear();
@@ -205,8 +175,8 @@ public class ClassImpl extends TypeImpl implements com.minimalabs.fiber.fiber.Cl
   {
     switch (featureID)
     {
-      case FiberPackage.CLASS__SUPER_ENTITY:
-        setSuperEntity((com.minimalabs.fiber.fiber.Class)null);
+      case FiberPackage.CLASS__SUPER_TYPES:
+        getSuperTypes().clear();
         return;
       case FiberPackage.CLASS__ATTRIBUTES:
         getAttributes().clear();
@@ -225,8 +195,8 @@ public class ClassImpl extends TypeImpl implements com.minimalabs.fiber.fiber.Cl
   {
     switch (featureID)
     {
-      case FiberPackage.CLASS__SUPER_ENTITY:
-        return superEntity != null;
+      case FiberPackage.CLASS__SUPER_TYPES:
+        return superTypes != null && !superTypes.isEmpty();
       case FiberPackage.CLASS__ATTRIBUTES:
         return attributes != null && !attributes.isEmpty();
     }

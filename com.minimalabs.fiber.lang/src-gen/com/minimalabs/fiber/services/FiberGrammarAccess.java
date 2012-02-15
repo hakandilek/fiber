@@ -48,15 +48,34 @@ public class FiberGrammarAccess extends AbstractGrammarElementFinder {
 	public class TypeElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Type");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final RuleCall cSimpleTypeParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
-		private final RuleCall cClassParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
-		private final RuleCall cEnumerationParserRuleCall_2 = (RuleCall)cAlternatives.eContents().get(2);
+		private final RuleCall cClassTypeParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cEnumerationParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
 		
 		//Type:
-		//	SimpleType | Class | Enumeration;
+		//	ClassType | Enumeration;
 		public ParserRule getRule() { return rule; }
 
-		//SimpleType | Class | Enumeration
+		//ClassType | Enumeration
+		public Alternatives getAlternatives() { return cAlternatives; }
+
+		//ClassType
+		public RuleCall getClassTypeParserRuleCall_0() { return cClassTypeParserRuleCall_0; }
+
+		//Enumeration
+		public RuleCall getEnumerationParserRuleCall_1() { return cEnumerationParserRuleCall_1; }
+	}
+
+	public class ClassTypeElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ClassType");
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cSimpleTypeParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cClassParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
+		
+		//ClassType:
+		//	SimpleType | Class;
+		public ParserRule getRule() { return rule; }
+
+		//SimpleType | Class
 		public Alternatives getAlternatives() { return cAlternatives; }
 
 		//SimpleType
@@ -64,9 +83,6 @@ public class FiberGrammarAccess extends AbstractGrammarElementFinder {
 
 		//Class
 		public RuleCall getClassParserRuleCall_1() { return cClassParserRuleCall_1; }
-
-		//Enumeration
-		public RuleCall getEnumerationParserRuleCall_2() { return cEnumerationParserRuleCall_2; }
 	}
 
 	public class SimpleTypeElements extends AbstractParserRuleElementFinder {
@@ -148,20 +164,25 @@ public class FiberGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cNameIDTerminalRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
 		private final Group cGroup_2 = (Group)cGroup.eContents().get(2);
-		private final Keyword cExtendsKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
-		private final Assignment cSuperEntityAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
-		private final CrossReference cSuperEntityClassCrossReference_2_1_0 = (CrossReference)cSuperEntityAssignment_2_1.eContents().get(0);
-		private final RuleCall cSuperEntityClassIDTerminalRuleCall_2_1_0_1 = (RuleCall)cSuperEntityClassCrossReference_2_1_0.eContents().get(1);
+		private final Keyword cColonKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
+		private final Assignment cSuperTypesAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
+		private final CrossReference cSuperTypesClassTypeCrossReference_2_1_0 = (CrossReference)cSuperTypesAssignment_2_1.eContents().get(0);
+		private final RuleCall cSuperTypesClassTypeIDTerminalRuleCall_2_1_0_1 = (RuleCall)cSuperTypesClassTypeCrossReference_2_1_0.eContents().get(1);
+		private final Group cGroup_2_2 = (Group)cGroup_2.eContents().get(2);
+		private final Keyword cCommaKeyword_2_2_0 = (Keyword)cGroup_2_2.eContents().get(0);
+		private final Assignment cSuperTypesAssignment_2_2_1 = (Assignment)cGroup_2_2.eContents().get(1);
+		private final CrossReference cSuperTypesClassTypeCrossReference_2_2_1_0 = (CrossReference)cSuperTypesAssignment_2_2_1.eContents().get(0);
+		private final RuleCall cSuperTypesClassTypeIDTerminalRuleCall_2_2_1_0_1 = (RuleCall)cSuperTypesClassTypeCrossReference_2_2_1_0.eContents().get(1);
 		private final Keyword cLeftCurlyBracketKeyword_3 = (Keyword)cGroup.eContents().get(3);
 		private final Assignment cAttributesAssignment_4 = (Assignment)cGroup.eContents().get(4);
 		private final RuleCall cAttributesAttributeParserRuleCall_4_0 = (RuleCall)cAttributesAssignment_4.eContents().get(0);
 		private final Keyword cRightCurlyBracketKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		
 		//Class:
-		//	"class" name=ID ("extends" superEntity=[Class])? "{" attributes+=Attribute* "}";
+		//	"class" name=ID (":" superTypes+=[ClassType] ("," superTypes+=[ClassType])*)? "{" attributes+=Attribute* "}";
 		public ParserRule getRule() { return rule; }
 
-		//"class" name=ID ("extends" superEntity=[Class])? "{" attributes+=Attribute* "}"
+		//"class" name=ID (":" superTypes+=[ClassType] ("," superTypes+=[ClassType])*)? "{" attributes+=Attribute* "}"
 		public Group getGroup() { return cGroup; }
 
 		//"class"
@@ -173,20 +194,35 @@ public class FiberGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getNameIDTerminalRuleCall_1_0() { return cNameIDTerminalRuleCall_1_0; }
 
-		//("extends" superEntity=[Class])?
+		//(":" superTypes+=[ClassType] ("," superTypes+=[ClassType])*)?
 		public Group getGroup_2() { return cGroup_2; }
 
-		//"extends"
-		public Keyword getExtendsKeyword_2_0() { return cExtendsKeyword_2_0; }
+		//":"
+		public Keyword getColonKeyword_2_0() { return cColonKeyword_2_0; }
 
-		//superEntity=[Class]
-		public Assignment getSuperEntityAssignment_2_1() { return cSuperEntityAssignment_2_1; }
+		//superTypes+=[ClassType]
+		public Assignment getSuperTypesAssignment_2_1() { return cSuperTypesAssignment_2_1; }
 
-		//[Class]
-		public CrossReference getSuperEntityClassCrossReference_2_1_0() { return cSuperEntityClassCrossReference_2_1_0; }
+		//[ClassType]
+		public CrossReference getSuperTypesClassTypeCrossReference_2_1_0() { return cSuperTypesClassTypeCrossReference_2_1_0; }
 
 		//ID
-		public RuleCall getSuperEntityClassIDTerminalRuleCall_2_1_0_1() { return cSuperEntityClassIDTerminalRuleCall_2_1_0_1; }
+		public RuleCall getSuperTypesClassTypeIDTerminalRuleCall_2_1_0_1() { return cSuperTypesClassTypeIDTerminalRuleCall_2_1_0_1; }
+
+		//("," superTypes+=[ClassType])*
+		public Group getGroup_2_2() { return cGroup_2_2; }
+
+		//","
+		public Keyword getCommaKeyword_2_2_0() { return cCommaKeyword_2_2_0; }
+
+		//superTypes+=[ClassType]
+		public Assignment getSuperTypesAssignment_2_2_1() { return cSuperTypesAssignment_2_2_1; }
+
+		//[ClassType]
+		public CrossReference getSuperTypesClassTypeCrossReference_2_2_1_0() { return cSuperTypesClassTypeCrossReference_2_2_1_0; }
+
+		//ID
+		public RuleCall getSuperTypesClassTypeIDTerminalRuleCall_2_2_1_0_1() { return cSuperTypesClassTypeIDTerminalRuleCall_2_2_1_0_1; }
 
 		//"{"
 		public Keyword getLeftCurlyBracketKeyword_3() { return cLeftCurlyBracketKeyword_3; }
@@ -492,6 +528,7 @@ public class FiberGrammarAccess extends AbstractGrammarElementFinder {
 	
 	private ModelElements pModel;
 	private TypeElements pType;
+	private ClassTypeElements pClassType;
 	private SimpleTypeElements pSimpleType;
 	private TypeIdElements pTypeId;
 	private ClassElements pClass;
@@ -535,13 +572,23 @@ public class FiberGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Type:
-	//	SimpleType | Class | Enumeration;
+	//	ClassType | Enumeration;
 	public TypeElements getTypeAccess() {
 		return (pType != null) ? pType : (pType = new TypeElements());
 	}
 	
 	public ParserRule getTypeRule() {
 		return getTypeAccess().getRule();
+	}
+
+	//ClassType:
+	//	SimpleType | Class;
+	public ClassTypeElements getClassTypeAccess() {
+		return (pClassType != null) ? pClassType : (pClassType = new ClassTypeElements());
+	}
+	
+	public ParserRule getClassTypeRule() {
+		return getClassTypeAccess().getRule();
 	}
 
 	//SimpleType:
@@ -565,7 +612,7 @@ public class FiberGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Class:
-	//	"class" name=ID ("extends" superEntity=[Class])? "{" attributes+=Attribute* "}";
+	//	"class" name=ID (":" superTypes+=[ClassType] ("," superTypes+=[ClassType])*)? "{" attributes+=Attribute* "}";
 	public ClassElements getClassAccess() {
 		return (pClass != null) ? pClass : (pClass = new ClassElements());
 	}

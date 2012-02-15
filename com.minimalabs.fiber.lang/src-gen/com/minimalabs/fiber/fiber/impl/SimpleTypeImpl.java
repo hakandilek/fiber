@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class SimpleTypeImpl extends TypeImpl implements SimpleType
+public class SimpleTypeImpl extends ClassTypeImpl implements SimpleType
 {
   /**
    * The cached value of the '{@link #getMappedType() <em>Mapped Type</em>}' containment reference.

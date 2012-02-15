@@ -137,11 +137,10 @@ public class InternalFiberLexer extends Lexer {
         try {
             int _type = T__15;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:15:7: ( 'extends' )
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:15:9: 'extends'
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:15:7: ( ':' )
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:15:9: ':'
             {
-            match("extends"); 
-
+            match(':'); 
 
             }
 
@@ -158,10 +157,10 @@ public class InternalFiberLexer extends Lexer {
         try {
             int _type = T__16;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:16:7: ( '{' )
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:16:9: '{'
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:16:7: ( ',' )
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:16:9: ','
             {
-            match('{'); 
+            match(','); 
 
             }
 
@@ -178,10 +177,10 @@ public class InternalFiberLexer extends Lexer {
         try {
             int _type = T__17;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:17:7: ( '}' )
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:17:9: '}'
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:17:7: ( '{' )
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:17:9: '{'
             {
-            match('}'); 
+            match('{'); 
 
             }
 
@@ -198,11 +197,10 @@ public class InternalFiberLexer extends Lexer {
         try {
             int _type = T__18;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:18:7: ( 'enum' )
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:18:9: 'enum'
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:18:7: ( '}' )
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:18:9: '}'
             {
-            match("enum"); 
-
+            match('}'); 
 
             }
 
@@ -219,10 +217,11 @@ public class InternalFiberLexer extends Lexer {
         try {
             int _type = T__19;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:19:7: ( '(' )
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:19:9: '('
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:19:7: ( 'enum' )
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:19:9: 'enum'
             {
-            match('('); 
+            match("enum"); 
+
 
             }
 
@@ -239,10 +238,10 @@ public class InternalFiberLexer extends Lexer {
         try {
             int _type = T__20;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:20:7: ( ')' )
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:20:9: ')'
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:20:7: ( '(' )
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:20:9: '('
             {
-            match(')'); 
+            match('('); 
 
             }
 
@@ -259,11 +258,10 @@ public class InternalFiberLexer extends Lexer {
         try {
             int _type = T__21;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:21:7: ( 'service' )
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:21:9: 'service'
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:21:7: ( ')' )
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:21:9: ')'
             {
-            match("service"); 
-
+            match(')'); 
 
             }
 
@@ -280,10 +278,11 @@ public class InternalFiberLexer extends Lexer {
         try {
             int _type = T__22;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:22:7: ( ',' )
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:22:9: ','
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:22:7: ( 'service' )
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:22:9: 'service'
             {
-            match(','); 
+            match("service"); 
+
 
             }
 
@@ -361,10 +360,10 @@ public class InternalFiberLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:822:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:822:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:869:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:869:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:822:11: ( '^' )?
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:869:11: ( '^' )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -373,7 +372,7 @@ public class InternalFiberLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:822:11: '^'
+                    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:869:11: '^'
                     {
                     match('^'); 
 
@@ -391,7 +390,7 @@ public class InternalFiberLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:822:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:869:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop2:
             do {
                 int alt2=2;
@@ -440,10 +439,10 @@ public class InternalFiberLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:824:10: ( ( '0' .. '9' )+ )
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:824:12: ( '0' .. '9' )+
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:871:10: ( ( '0' .. '9' )+ )
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:871:12: ( '0' .. '9' )+
             {
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:824:12: ( '0' .. '9' )+
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:871:12: ( '0' .. '9' )+
             int cnt3=0;
             loop3:
             do {
@@ -457,7 +456,7 @@ public class InternalFiberLexer extends Lexer {
 
                 switch (alt3) {
             	case 1 :
-            	    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:824:13: '0' .. '9'
+            	    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:871:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -489,10 +488,10 @@ public class InternalFiberLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:826:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:826:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:873:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:873:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:826:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:873:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -510,10 +509,10 @@ public class InternalFiberLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:826:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:873:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:826:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:873:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop4:
                     do {
                         int alt4=3;
@@ -529,7 +528,7 @@ public class InternalFiberLexer extends Lexer {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:826:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:873:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -545,7 +544,7 @@ public class InternalFiberLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:826:66: ~ ( ( '\\\\' | '\"' ) )
+                    	    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:873:66: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -570,10 +569,10 @@ public class InternalFiberLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:826:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:873:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:826:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:873:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop5:
                     do {
                         int alt5=3;
@@ -589,7 +588,7 @@ public class InternalFiberLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:826:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:873:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -605,7 +604,7 @@ public class InternalFiberLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:826:137: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:873:137: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -648,12 +647,12 @@ public class InternalFiberLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:828:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:828:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:875:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:875:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:828:24: ( options {greedy=false; } : . )*
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:875:24: ( options {greedy=false; } : . )*
             loop7:
             do {
                 int alt7=2;
@@ -678,7 +677,7 @@ public class InternalFiberLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:828:52: .
+            	    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:875:52: .
             	    {
             	    matchAny(); 
 
@@ -708,12 +707,12 @@ public class InternalFiberLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:830:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:830:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:877:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:877:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:830:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:877:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop8:
             do {
                 int alt8=2;
@@ -726,7 +725,7 @@ public class InternalFiberLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:830:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:877:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -746,7 +745,7 @@ public class InternalFiberLexer extends Lexer {
                 }
             } while (true);
 
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:830:40: ( ( '\\r' )? '\\n' )?
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:877:40: ( ( '\\r' )? '\\n' )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -755,9 +754,9 @@ public class InternalFiberLexer extends Lexer {
             }
             switch (alt10) {
                 case 1 :
-                    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:830:41: ( '\\r' )? '\\n'
+                    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:877:41: ( '\\r' )? '\\n'
                     {
-                    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:830:41: ( '\\r' )?
+                    // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:877:41: ( '\\r' )?
                     int alt9=2;
                     int LA9_0 = input.LA(1);
 
@@ -766,7 +765,7 @@ public class InternalFiberLexer extends Lexer {
                     }
                     switch (alt9) {
                         case 1 :
-                            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:830:41: '\\r'
+                            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:877:41: '\\r'
                             {
                             match('\r'); 
 
@@ -798,10 +797,10 @@ public class InternalFiberLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:832:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:832:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:879:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:879:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:832:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:879:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt11=0;
             loop11:
             do {
@@ -855,8 +854,8 @@ public class InternalFiberLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:834:16: ( . )
-            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:834:18: .
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:881:16: ( . )
+            // ../com.minimalabs.fiber.lang/src-gen/com/minimalabs/fiber/parser/antlr/internal/InternalFiber.g:881:18: .
             {
             matchAny(); 
 
@@ -1037,74 +1036,73 @@ public class InternalFiberLexer extends Lexer {
 
     protected DFA12 dfa12 = new DFA12(this);
     static final String DFA12_eotS =
-        "\1\uffff\2\30\1\uffff\2\30\4\uffff\1\30\1\uffff\1\30\2\uffff\1"+
-        "\26\2\uffff\3\26\2\uffff\1\30\1\uffff\1\55\1\uffff\3\30\4\uffff"+
-        "\1\30\1\uffff\1\30\7\uffff\1\30\1\uffff\5\30\1\71\2\30\1\74\1\30"+
-        "\1\76\1\uffff\1\77\1\30\1\uffff\1\30\2\uffff\2\30\1\104\1\105\2"+
-        "\uffff";
+        "\1\uffff\2\31\1\uffff\1\31\4\uffff\1\31\2\uffff\2\31\2\uffff\1"+
+        "\27\2\uffff\3\27\2\uffff\1\31\1\uffff\1\56\1\uffff\1\31\4\uffff"+
+        "\1\31\2\uffff\2\31\7\uffff\1\31\1\uffff\4\31\1\70\1\31\1\72\1\31"+
+        "\1\74\1\uffff\1\75\1\uffff\1\31\2\uffff\1\31\1\100\1\uffff";
     static final String DFA12_eofS =
-        "\106\uffff";
+        "\101\uffff";
     static final String DFA12_minS =
-        "\1\0\1\171\1\163\1\uffff\1\154\1\156\4\uffff\1\145\1\uffff\1\117"+
+        "\1\0\1\171\1\163\1\uffff\1\154\4\uffff\1\156\2\uffff\1\145\1\117"+
         "\2\uffff\1\101\2\uffff\2\0\1\52\2\uffff\1\160\1\uffff\1\60\1\uffff"+
-        "\1\141\1\164\1\165\4\uffff\1\162\1\uffff\1\116\7\uffff\1\145\1\uffff"+
-        "\1\163\1\145\1\155\1\166\1\105\1\60\1\163\1\156\1\60\1\151\1\60"+
-        "\1\uffff\1\60\1\144\1\uffff\1\143\2\uffff\1\163\1\145\2\60\2\uffff";
+        "\1\141\4\uffff\1\165\2\uffff\1\162\1\116\7\uffff\1\145\1\uffff\1"+
+        "\163\1\155\1\166\1\105\1\60\1\163\1\60\1\151\1\60\1\uffff\1\60\1"+
+        "\uffff\1\143\2\uffff\1\145\1\60\1\uffff";
     static final String DFA12_maxS =
-        "\1\uffff\1\171\1\163\1\uffff\1\154\1\170\4\uffff\1\145\1\uffff"+
+        "\1\uffff\1\171\1\163\1\uffff\1\154\4\uffff\1\156\2\uffff\1\145"+
         "\1\117\2\uffff\1\172\2\uffff\2\uffff\1\57\2\uffff\1\160\1\uffff"+
-        "\1\172\1\uffff\1\141\1\164\1\165\4\uffff\1\162\1\uffff\1\116\7\uffff"+
-        "\1\145\1\uffff\1\163\1\145\1\155\1\166\1\105\1\172\1\163\1\156\1"+
-        "\172\1\151\1\172\1\uffff\1\172\1\144\1\uffff\1\143\2\uffff\1\163"+
-        "\1\145\2\172\2\uffff";
+        "\1\172\1\uffff\1\141\4\uffff\1\165\2\uffff\1\162\1\116\7\uffff\1"+
+        "\145\1\uffff\1\163\1\155\1\166\1\105\1\172\1\163\1\172\1\151\1\172"+
+        "\1\uffff\1\172\1\uffff\1\143\2\uffff\1\145\1\172\1\uffff";
     static final String DFA12_acceptS =
-        "\3\uffff\1\3\2\uffff\1\6\1\7\1\11\1\12\1\uffff\1\14\1\uffff\1\16"+
-        "\1\17\1\uffff\1\20\1\21\3\uffff\1\25\1\26\1\uffff\1\20\1\uffff\1"+
-        "\3\3\uffff\1\6\1\7\1\11\1\12\1\uffff\1\14\1\uffff\1\16\1\17\1\21"+
-        "\1\22\1\23\1\24\1\25\1\uffff\1\2\13\uffff\1\1\2\uffff\1\10\1\uffff"+
-        "\1\15\1\4\4\uffff\1\5\1\13";
+        "\3\uffff\1\3\1\uffff\1\5\1\6\1\7\1\10\1\uffff\1\12\1\13\2\uffff"+
+        "\1\16\1\17\1\uffff\1\20\1\21\3\uffff\1\25\1\26\1\uffff\1\20\1\uffff"+
+        "\1\3\1\uffff\1\5\1\6\1\7\1\10\1\uffff\1\12\1\13\2\uffff\1\16\1\17"+
+        "\1\21\1\22\1\23\1\24\1\25\1\uffff\1\2\11\uffff\1\1\1\uffff\1\11"+
+        "\1\uffff\1\15\1\4\2\uffff\1\14";
     static final String DFA12_specialS =
-        "\1\1\21\uffff\1\2\1\0\62\uffff}>";
+        "\1\0\22\uffff\1\1\1\2\54\uffff}>";
     static final String[] DFA12_transitionS = {
-            "\11\26\2\25\2\26\1\25\22\26\1\25\1\26\1\22\1\16\3\26\1\23\1"+
-            "\10\1\11\1\15\1\26\1\13\1\26\1\3\1\24\12\21\7\26\15\20\1\14"+
-            "\14\20\3\26\1\17\1\20\1\26\2\20\1\4\1\20\1\5\3\20\1\2\11\20"+
-            "\1\12\1\1\6\20\1\6\1\26\1\7\uff82\26",
-            "\1\27",
-            "\1\31",
+            "\11\27\2\26\2\27\1\26\22\27\1\26\1\27\1\23\1\17\3\27\1\24\1"+
+            "\12\1\13\1\16\1\27\1\6\1\27\1\3\1\25\12\22\1\5\6\27\15\21\1"+
+            "\15\14\21\3\27\1\20\1\21\1\27\2\21\1\4\1\21\1\11\3\21\1\2\11"+
+            "\21\1\14\1\1\6\21\1\7\1\27\1\10\uff82\27",
+            "\1\30",
+            "\1\32",
             "",
-            "\1\33",
-            "\1\35\11\uffff\1\34",
-            "",
+            "\1\34",
             "",
             "",
             "",
-            "\1\42",
+            "",
+            "\1\41",
+            "",
             "",
             "\1\44",
+            "\1\45",
             "",
             "",
-            "\32\30\4\uffff\1\30\1\uffff\32\30",
+            "\32\31\4\uffff\1\31\1\uffff\32\31",
             "",
             "",
-            "\0\50",
-            "\0\50",
-            "\1\51\4\uffff\1\52",
+            "\0\51",
+            "\0\51",
+            "\1\52\4\uffff\1\53",
             "",
             "",
-            "\1\54",
+            "\1\55",
             "",
-            "\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32\30",
+            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "",
-            "\1\56",
             "\1\57",
+            "",
+            "",
+            "",
+            "",
             "\1\60",
             "",
             "",
-            "",
-            "",
             "\1\61",
-            "",
             "\1\62",
             "",
             "",
@@ -1119,25 +1117,19 @@ public class InternalFiberLexer extends Lexer {
             "\1\65",
             "\1\66",
             "\1\67",
-            "\1\70",
-            "\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32\30",
-            "\1\72",
+            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
+            "\1\71",
+            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "\1\73",
-            "\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32\30",
-            "\1\75",
-            "\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32\30",
+            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "",
-            "\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32\30",
-            "\1\100",
+            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             "",
-            "\1\101",
+            "\1\76",
             "",
             "",
-            "\1\102",
-            "\1\103",
-            "\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32\30",
-            "\12\30\7\uffff\32\30\4\uffff\1\30\1\uffff\32\30",
-            "",
+            "\1\77",
+            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
             ""
     };
 
@@ -1178,16 +1170,6 @@ public class InternalFiberLexer extends Lexer {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA12_19 = input.LA(1);
-
-                        s = -1;
-                        if ( ((LA12_19>='\u0000' && LA12_19<='\uFFFF')) ) {s = 40;}
-
-                        else s = 22;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
                         int LA12_0 = input.LA(1);
 
                         s = -1;
@@ -1199,51 +1181,63 @@ public class InternalFiberLexer extends Lexer {
 
                         else if ( (LA12_0=='c') ) {s = 4;}
 
-                        else if ( (LA12_0=='e') ) {s = 5;}
+                        else if ( (LA12_0==':') ) {s = 5;}
 
-                        else if ( (LA12_0=='{') ) {s = 6;}
+                        else if ( (LA12_0==',') ) {s = 6;}
 
-                        else if ( (LA12_0=='}') ) {s = 7;}
+                        else if ( (LA12_0=='{') ) {s = 7;}
 
-                        else if ( (LA12_0=='(') ) {s = 8;}
+                        else if ( (LA12_0=='}') ) {s = 8;}
 
-                        else if ( (LA12_0==')') ) {s = 9;}
+                        else if ( (LA12_0=='e') ) {s = 9;}
 
-                        else if ( (LA12_0=='s') ) {s = 10;}
+                        else if ( (LA12_0=='(') ) {s = 10;}
 
-                        else if ( (LA12_0==',') ) {s = 11;}
+                        else if ( (LA12_0==')') ) {s = 11;}
 
-                        else if ( (LA12_0=='N') ) {s = 12;}
+                        else if ( (LA12_0=='s') ) {s = 12;}
 
-                        else if ( (LA12_0=='*') ) {s = 13;}
+                        else if ( (LA12_0=='N') ) {s = 13;}
 
-                        else if ( (LA12_0=='#') ) {s = 14;}
+                        else if ( (LA12_0=='*') ) {s = 14;}
 
-                        else if ( (LA12_0=='^') ) {s = 15;}
+                        else if ( (LA12_0=='#') ) {s = 15;}
 
-                        else if ( ((LA12_0>='A' && LA12_0<='M')||(LA12_0>='O' && LA12_0<='Z')||LA12_0=='_'||(LA12_0>='a' && LA12_0<='b')||LA12_0=='d'||(LA12_0>='f' && LA12_0<='h')||(LA12_0>='j' && LA12_0<='r')||(LA12_0>='u' && LA12_0<='z')) ) {s = 16;}
+                        else if ( (LA12_0=='^') ) {s = 16;}
 
-                        else if ( ((LA12_0>='0' && LA12_0<='9')) ) {s = 17;}
+                        else if ( ((LA12_0>='A' && LA12_0<='M')||(LA12_0>='O' && LA12_0<='Z')||LA12_0=='_'||(LA12_0>='a' && LA12_0<='b')||LA12_0=='d'||(LA12_0>='f' && LA12_0<='h')||(LA12_0>='j' && LA12_0<='r')||(LA12_0>='u' && LA12_0<='z')) ) {s = 17;}
 
-                        else if ( (LA12_0=='\"') ) {s = 18;}
+                        else if ( ((LA12_0>='0' && LA12_0<='9')) ) {s = 18;}
 
-                        else if ( (LA12_0=='\'') ) {s = 19;}
+                        else if ( (LA12_0=='\"') ) {s = 19;}
 
-                        else if ( (LA12_0=='/') ) {s = 20;}
+                        else if ( (LA12_0=='\'') ) {s = 20;}
 
-                        else if ( ((LA12_0>='\t' && LA12_0<='\n')||LA12_0=='\r'||LA12_0==' ') ) {s = 21;}
+                        else if ( (LA12_0=='/') ) {s = 21;}
 
-                        else if ( ((LA12_0>='\u0000' && LA12_0<='\b')||(LA12_0>='\u000B' && LA12_0<='\f')||(LA12_0>='\u000E' && LA12_0<='\u001F')||LA12_0=='!'||(LA12_0>='$' && LA12_0<='&')||LA12_0=='+'||LA12_0=='-'||(LA12_0>=':' && LA12_0<='@')||(LA12_0>='[' && LA12_0<=']')||LA12_0=='`'||LA12_0=='|'||(LA12_0>='~' && LA12_0<='\uFFFF')) ) {s = 22;}
+                        else if ( ((LA12_0>='\t' && LA12_0<='\n')||LA12_0=='\r'||LA12_0==' ') ) {s = 22;}
+
+                        else if ( ((LA12_0>='\u0000' && LA12_0<='\b')||(LA12_0>='\u000B' && LA12_0<='\f')||(LA12_0>='\u000E' && LA12_0<='\u001F')||LA12_0=='!'||(LA12_0>='$' && LA12_0<='&')||LA12_0=='+'||LA12_0=='-'||(LA12_0>=';' && LA12_0<='@')||(LA12_0>='[' && LA12_0<=']')||LA12_0=='`'||LA12_0=='|'||(LA12_0>='~' && LA12_0<='\uFFFF')) ) {s = 23;}
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 1 : 
+                        int LA12_19 = input.LA(1);
+
+                        s = -1;
+                        if ( ((LA12_19>='\u0000' && LA12_19<='\uFFFF')) ) {s = 41;}
+
+                        else s = 23;
 
                         if ( s>=0 ) return s;
                         break;
                     case 2 : 
-                        int LA12_18 = input.LA(1);
+                        int LA12_20 = input.LA(1);
 
                         s = -1;
-                        if ( ((LA12_18>='\u0000' && LA12_18<='\uFFFF')) ) {s = 40;}
+                        if ( ((LA12_20>='\u0000' && LA12_20<='\uFFFF')) ) {s = 41;}
 
-                        else s = 22;
+                        else s = 23;
 
                         if ( s>=0 ) return s;
                         break;

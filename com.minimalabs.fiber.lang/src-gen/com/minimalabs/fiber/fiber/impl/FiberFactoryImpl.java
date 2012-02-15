@@ -8,6 +8,7 @@ package com.minimalabs.fiber.fiber.impl;
 
 import com.minimalabs.fiber.fiber.Attribute;
 import com.minimalabs.fiber.fiber.AttributeManyReference;
+import com.minimalabs.fiber.fiber.ClassType;
 import com.minimalabs.fiber.fiber.Enumeration;
 import com.minimalabs.fiber.fiber.EnumerationLiteral;
 import com.minimalabs.fiber.fiber.FiberFactory;
@@ -83,6 +84,7 @@ public class FiberFactoryImpl extends EFactoryImpl implements FiberFactory
     {
       case FiberPackage.MODEL: return createModel();
       case FiberPackage.TYPE: return createType();
+      case FiberPackage.CLASS_TYPE: return createClassType();
       case FiberPackage.SIMPLE_TYPE: return createSimpleType();
       case FiberPackage.TYPE_ID: return createTypeId();
       case FiberPackage.CLASS: return createClass();
@@ -151,6 +153,17 @@ public class FiberFactoryImpl extends EFactoryImpl implements FiberFactory
   {
     TypeImpl type = new TypeImpl();
     return type;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public ClassType createClassType()
+  {
+    ClassTypeImpl classType = new ClassTypeImpl();
+    return classType;
   }
 
   /**

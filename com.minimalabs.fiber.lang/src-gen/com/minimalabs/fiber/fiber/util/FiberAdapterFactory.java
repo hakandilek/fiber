@@ -7,6 +7,7 @@
 package com.minimalabs.fiber.fiber.util;
 
 import com.minimalabs.fiber.fiber.Attribute;
+import com.minimalabs.fiber.fiber.ClassType;
 import com.minimalabs.fiber.fiber.Enumeration;
 import com.minimalabs.fiber.fiber.EnumerationLiteral;
 import com.minimalabs.fiber.fiber.FiberPackage;
@@ -97,6 +98,11 @@ public class FiberAdapterFactory extends AdapterFactoryImpl
       public Adapter caseType(Type object)
       {
         return createTypeAdapter();
+      }
+      @Override
+      public Adapter caseClassType(ClassType object)
+      {
+        return createClassTypeAdapter();
       }
       @Override
       public Adapter caseSimpleType(SimpleType object)
@@ -191,6 +197,21 @@ public class FiberAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createTypeAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link com.minimalabs.fiber.fiber.ClassType <em>Class Type</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see com.minimalabs.fiber.fiber.ClassType
+   * @generated
+   */
+  public Adapter createClassTypeAdapter()
   {
     return null;
   }

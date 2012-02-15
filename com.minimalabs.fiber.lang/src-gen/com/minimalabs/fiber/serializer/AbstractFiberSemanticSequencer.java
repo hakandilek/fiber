@@ -61,6 +61,7 @@ public class AbstractFiberSemanticSequencer extends AbstractSemanticSequencer {
 				else break;
 			case FiberPackage.CLASS:
 				if(context == grammarAccess.getClassRule() ||
+				   context == grammarAccess.getClassTypeRule() ||
 				   context == grammarAccess.getTypeRule()) {
 					sequence_Class(context, (com.minimalabs.fiber.fiber.Class) semanticObject); 
 					return; 
@@ -104,7 +105,8 @@ public class AbstractFiberSemanticSequencer extends AbstractSemanticSequencer {
 				}
 				else break;
 			case FiberPackage.SIMPLE_TYPE:
-				if(context == grammarAccess.getSimpleTypeRule() ||
+				if(context == grammarAccess.getClassTypeRule() ||
+				   context == grammarAccess.getSimpleTypeRule() ||
 				   context == grammarAccess.getTypeRule()) {
 					sequence_SimpleType(context, (SimpleType) semanticObject); 
 					return; 
@@ -131,7 +133,7 @@ public class AbstractFiberSemanticSequencer extends AbstractSemanticSequencer {
 	
 	/**
 	 * Constraint:
-	 *     (name=ID superEntity=[Class|ID]? attributes+=Attribute*)
+	 *     (name=ID (superTypes+=[ClassType|ID] superTypes+=[ClassType|ID]*)? attributes+=Attribute*)
 	 */
 	protected void sequence_Class(EObject context, com.minimalabs.fiber.fiber.Class semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

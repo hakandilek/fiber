@@ -21,6 +21,7 @@
     <genClasses ecoreClass="Fiber.ecore#//Type">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Fiber.ecore#//Type/name"/>
     </genClasses>
+    <genClasses ecoreClass="Fiber.ecore#//ClassType"/>
     <genClasses ecoreClass="Fiber.ecore#//SimpleType">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Fiber.ecore#//SimpleType/mappedType"/>
     </genClasses>
@@ -28,7 +29,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Fiber.ecore#//TypeId/name"/>
     </genClasses>
     <genClasses ecoreClass="Fiber.ecore#//Class">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Fiber.ecore#//Class/superEntity"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Fiber.ecore#//Class/superTypes"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Fiber.ecore#//Class/attributes"/>
     </genClasses>
     <genClasses ecoreClass="Fiber.ecore#//Attribute">

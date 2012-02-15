@@ -38,6 +38,7 @@ public class FiberParser extends AbstractContentAssistParser {
 				private static final long serialVersionUID = 1L;
 				{
 					put(grammarAccess.getTypeAccess().getAlternatives(), "rule__Type__Alternatives");
+					put(grammarAccess.getClassTypeAccess().getAlternatives(), "rule__ClassType__Alternatives");
 					put(grammarAccess.getAttributeManyReferenceAccess().getAlternatives(), "rule__AttributeManyReference__Alternatives");
 					put(grammarAccess.getModelAccess().getGroup(), "rule__Model__Group__0");
 					put(grammarAccess.getSimpleTypeAccess().getGroup(), "rule__SimpleType__Group__0");
@@ -46,6 +47,7 @@ public class FiberParser extends AbstractContentAssistParser {
 					put(grammarAccess.getTypeIdAccess().getGroup_1(), "rule__TypeId__Group_1__0");
 					put(grammarAccess.getClassAccess().getGroup(), "rule__Class__Group__0");
 					put(grammarAccess.getClassAccess().getGroup_2(), "rule__Class__Group_2__0");
+					put(grammarAccess.getClassAccess().getGroup_2_2(), "rule__Class__Group_2_2__0");
 					put(grammarAccess.getAttributeAccess().getGroup(), "rule__Attribute__Group__0");
 					put(grammarAccess.getEnumerationAccess().getGroup(), "rule__Enumeration__Group__0");
 					put(grammarAccess.getEnumerationLiteralAccess().getGroup(), "rule__EnumerationLiteral__Group__0");
@@ -59,7 +61,8 @@ public class FiberParser extends AbstractContentAssistParser {
 					put(grammarAccess.getSimpleTypeAccess().getMappedTypeAssignment_2_1(), "rule__SimpleType__MappedTypeAssignment_2_1");
 					put(grammarAccess.getTypeIdAccess().getNameAssignment_0(), "rule__TypeId__NameAssignment_0");
 					put(grammarAccess.getClassAccess().getNameAssignment_1(), "rule__Class__NameAssignment_1");
-					put(grammarAccess.getClassAccess().getSuperEntityAssignment_2_1(), "rule__Class__SuperEntityAssignment_2_1");
+					put(grammarAccess.getClassAccess().getSuperTypesAssignment_2_1(), "rule__Class__SuperTypesAssignment_2_1");
+					put(grammarAccess.getClassAccess().getSuperTypesAssignment_2_2_1(), "rule__Class__SuperTypesAssignment_2_2_1");
 					put(grammarAccess.getClassAccess().getAttributesAssignment_4(), "rule__Class__AttributesAssignment_4");
 					put(grammarAccess.getAttributeAccess().getTypeAssignment_0(), "rule__Attribute__TypeAssignment_0");
 					put(grammarAccess.getAttributeAccess().getManyReferenceAssignment_1(), "rule__Attribute__ManyReferenceAssignment_1");

@@ -7,6 +7,7 @@
 package com.minimalabs.fiber.fiber.util;
 
 import com.minimalabs.fiber.fiber.Attribute;
+import com.minimalabs.fiber.fiber.ClassType;
 import com.minimalabs.fiber.fiber.Enumeration;
 import com.minimalabs.fiber.fiber.EnumerationLiteral;
 import com.minimalabs.fiber.fiber.FiberPackage;
@@ -100,10 +101,19 @@ public class FiberSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case FiberPackage.CLASS_TYPE:
+      {
+        ClassType classType = (ClassType)theEObject;
+        T result = caseClassType(classType);
+        if (result == null) result = caseType(classType);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       case FiberPackage.SIMPLE_TYPE:
       {
         SimpleType simpleType = (SimpleType)theEObject;
         T result = caseSimpleType(simpleType);
+        if (result == null) result = caseClassType(simpleType);
         if (result == null) result = caseType(simpleType);
         if (result == null) result = defaultCase(theEObject);
         return result;
@@ -119,6 +129,7 @@ public class FiberSwitch<T> extends Switch<T>
       {
         com.minimalabs.fiber.fiber.Class class_ = (com.minimalabs.fiber.fiber.Class)theEObject;
         T result = caseClass(class_);
+        if (result == null) result = caseClassType(class_);
         if (result == null) result = caseType(class_);
         if (result == null) result = defaultCase(theEObject);
         return result;
@@ -198,6 +209,22 @@ public class FiberSwitch<T> extends Switch<T>
    * @generated
    */
   public T caseType(Type object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Class Type</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Class Type</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseClassType(ClassType object)
   {
     return null;
   }

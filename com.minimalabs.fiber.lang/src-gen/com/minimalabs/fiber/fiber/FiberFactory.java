@@ -45,6 +45,15 @@ public interface FiberFactory extends EFactory
   Type createType();
 
   /**
+   * Returns a new object of class '<em>Class Type</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Class Type</em>'.
+   * @generated
+   */
+  ClassType createClassType();
+
+  /**
    * Returns a new object of class '<em>Simple Type</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->

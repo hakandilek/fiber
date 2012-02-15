@@ -23,7 +23,7 @@ package com.minimalabs.fiber.fiber;
  * @model
  * @generated
  */
-public interface SimpleType extends Type
+public interface SimpleType extends ClassType
 {
   /**
    * Returns the value of the '<em><b>Mapped Type</b></em>' containment reference.

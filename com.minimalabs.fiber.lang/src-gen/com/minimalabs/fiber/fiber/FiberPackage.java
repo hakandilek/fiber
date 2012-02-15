@@ -127,14 +127,14 @@ public interface FiberPackage extends EPackage
   int TYPE_FEATURE_COUNT = 1;
 
   /**
-   * The meta object id for the '{@link com.minimalabs.fiber.fiber.impl.SimpleTypeImpl <em>Simple Type</em>}' class.
+   * The meta object id for the '{@link com.minimalabs.fiber.fiber.impl.ClassTypeImpl <em>Class Type</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see com.minimalabs.fiber.fiber.impl.SimpleTypeImpl
-   * @see com.minimalabs.fiber.fiber.impl.FiberPackageImpl#getSimpleType()
+   * @see com.minimalabs.fiber.fiber.impl.ClassTypeImpl
+   * @see com.minimalabs.fiber.fiber.impl.FiberPackageImpl#getClassType()
    * @generated
    */
-  int SIMPLE_TYPE = 2;
+  int CLASS_TYPE = 2;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -143,7 +143,35 @@ public interface FiberPackage extends EPackage
    * @generated
    * @ordered
    */
-  int SIMPLE_TYPE__NAME = TYPE__NAME;
+  int CLASS_TYPE__NAME = TYPE__NAME;
+
+  /**
+   * The number of structural features of the '<em>Class Type</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int CLASS_TYPE_FEATURE_COUNT = TYPE_FEATURE_COUNT + 0;
+
+  /**
+   * The meta object id for the '{@link com.minimalabs.fiber.fiber.impl.SimpleTypeImpl <em>Simple Type</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see com.minimalabs.fiber.fiber.impl.SimpleTypeImpl
+   * @see com.minimalabs.fiber.fiber.impl.FiberPackageImpl#getSimpleType()
+   * @generated
+   */
+  int SIMPLE_TYPE = 3;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SIMPLE_TYPE__NAME = CLASS_TYPE__NAME;
 
   /**
    * The feature id for the '<em><b>Mapped Type</b></em>' containment reference.
@@ -152,7 +180,7 @@ public interface FiberPackage extends EPackage
    * @generated
    * @ordered
    */
-  int SIMPLE_TYPE__MAPPED_TYPE = TYPE_FEATURE_COUNT + 0;
+  int SIMPLE_TYPE__MAPPED_TYPE = CLASS_TYPE_FEATURE_COUNT + 0;
 
   /**
    * The number of structural features of the '<em>Simple Type</em>' class.
@@ -161,7 +189,7 @@ public interface FiberPackage extends EPackage
    * @generated
    * @ordered
    */
-  int SIMPLE_TYPE_FEATURE_COUNT = TYPE_FEATURE_COUNT + 1;
+  int SIMPLE_TYPE_FEATURE_COUNT = CLASS_TYPE_FEATURE_COUNT + 1;
 
   /**
    * The meta object id for the '{@link com.minimalabs.fiber.fiber.impl.TypeIdImpl <em>Type Id</em>}' class.
@@ -171,7 +199,7 @@ public interface FiberPackage extends EPackage
    * @see com.minimalabs.fiber.fiber.impl.FiberPackageImpl#getTypeId()
    * @generated
    */
-  int TYPE_ID = 3;
+  int TYPE_ID = 4;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -199,7 +227,7 @@ public interface FiberPackage extends EPackage
    * @see com.minimalabs.fiber.fiber.impl.FiberPackageImpl#getClass_()
    * @generated
    */
-  int CLASS = 4;
+  int CLASS = 5;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -208,16 +236,16 @@ public interface FiberPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CLASS__NAME = TYPE__NAME;
+  int CLASS__NAME = CLASS_TYPE__NAME;
 
   /**
-   * The feature id for the '<em><b>Super Entity</b></em>' reference.
+   * The feature id for the '<em><b>Super Types</b></em>' reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int CLASS__SUPER_ENTITY = TYPE_FEATURE_COUNT + 0;
+  int CLASS__SUPER_TYPES = CLASS_TYPE_FEATURE_COUNT + 0;
 
   /**
    * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
@@ -226,7 +254,7 @@ public interface FiberPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CLASS__ATTRIBUTES = TYPE_FEATURE_COUNT + 1;
+  int CLASS__ATTRIBUTES = CLASS_TYPE_FEATURE_COUNT + 1;
 
   /**
    * The number of structural features of the '<em>Class</em>' class.
@@ -235,7 +263,7 @@ public interface FiberPackage extends EPackage
    * @generated
    * @ordered
    */
-  int CLASS_FEATURE_COUNT = TYPE_FEATURE_COUNT + 2;
+  int CLASS_FEATURE_COUNT = CLASS_TYPE_FEATURE_COUNT + 2;
 
   /**
    * The meta object id for the '{@link com.minimalabs.fiber.fiber.impl.AttributeImpl <em>Attribute</em>}' class.
@@ -245,7 +273,7 @@ public interface FiberPackage extends EPackage
    * @see com.minimalabs.fiber.fiber.impl.FiberPackageImpl#getAttribute()
    * @generated
    */
-  int ATTRIBUTE = 5;
+  int ATTRIBUTE = 6;
 
   /**
    * The feature id for the '<em><b>Type</b></em>' reference.
@@ -291,7 +319,7 @@ public interface FiberPackage extends EPackage
    * @see com.minimalabs.fiber.fiber.impl.FiberPackageImpl#getEnumeration()
    * @generated
    */
-  int ENUMERATION = 6;
+  int ENUMERATION = 7;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -328,7 +356,7 @@ public interface FiberPackage extends EPackage
    * @see com.minimalabs.fiber.fiber.impl.FiberPackageImpl#getEnumerationLiteral()
    * @generated
    */
-  int ENUMERATION_LITERAL = 7;
+  int ENUMERATION_LITERAL = 8;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -365,7 +393,7 @@ public interface FiberPackage extends EPackage
    * @see com.minimalabs.fiber.fiber.impl.FiberPackageImpl#getService()
    * @generated
    */
-  int SERVICE = 8;
+  int SERVICE = 9;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -402,7 +430,7 @@ public interface FiberPackage extends EPackage
    * @see com.minimalabs.fiber.fiber.impl.FiberPackageImpl#getMethod()
    * @generated
    */
-  int METHOD = 9;
+  int METHOD = 10;
 
   /**
    * The feature id for the '<em><b>Return Type</b></em>' reference.
@@ -448,7 +476,7 @@ public interface FiberPackage extends EPackage
    * @see com.minimalabs.fiber.fiber.impl.FiberPackageImpl#getParameter()
    * @generated
    */
-  int PARAMETER = 10;
+  int PARAMETER = 11;
 
   /**
    * The feature id for the '<em><b>Type</b></em>' reference.
@@ -485,7 +513,7 @@ public interface FiberPackage extends EPackage
    * @see com.minimalabs.fiber.fiber.impl.FiberPackageImpl#getAttributeManyReference()
    * @generated
    */
-  int ATTRIBUTE_MANY_REFERENCE = 11;
+  int ATTRIBUTE_MANY_REFERENCE = 12;
 
 
   /**
@@ -542,6 +570,16 @@ public interface FiberPackage extends EPackage
   EAttribute getType_Name();
 
   /**
+   * Returns the meta object for class '{@link com.minimalabs.fiber.fiber.ClassType <em>Class Type</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Class Type</em>'.
+   * @see com.minimalabs.fiber.fiber.ClassType
+   * @generated
+   */
+  EClass getClassType();
+
+  /**
    * Returns the meta object for class '{@link com.minimalabs.fiber.fiber.SimpleType <em>Simple Type</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -594,15 +632,15 @@ public interface FiberPackage extends EPackage
   EClass getClass_();
 
   /**
-   * Returns the meta object for the reference '{@link com.minimalabs.fiber.fiber.Class#getSuperEntity <em>Super Entity</em>}'.
+   * Returns the meta object for the reference list '{@link com.minimalabs.fiber.fiber.Class#getSuperTypes <em>Super Types</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the reference '<em>Super Entity</em>'.
-   * @see com.minimalabs.fiber.fiber.Class#getSuperEntity()
+   * @return the meta object for the reference list '<em>Super Types</em>'.
+   * @see com.minimalabs.fiber.fiber.Class#getSuperTypes()
    * @see #getClass_()
    * @generated
    */
-  EReference getClass_SuperEntity();
+  EReference getClass_SuperTypes();
 
   /**
    * Returns the meta object for the containment reference list '{@link com.minimalabs.fiber.fiber.Class#getAttributes <em>Attributes</em>}'.
@@ -896,6 +934,16 @@ public interface FiberPackage extends EPackage
     EAttribute TYPE__NAME = eINSTANCE.getType_Name();
 
     /**
+     * The meta object literal for the '{@link com.minimalabs.fiber.fiber.impl.ClassTypeImpl <em>Class Type</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see com.minimalabs.fiber.fiber.impl.ClassTypeImpl
+     * @see com.minimalabs.fiber.fiber.impl.FiberPackageImpl#getClassType()
+     * @generated
+     */
+    EClass CLASS_TYPE = eINSTANCE.getClassType();
+
+    /**
      * The meta object literal for the '{@link com.minimalabs.fiber.fiber.impl.SimpleTypeImpl <em>Simple Type</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -942,12 +990,12 @@ public interface FiberPackage extends EPackage
     EClass CLASS = eINSTANCE.getClass_();
 
     /**
-     * The meta object literal for the '<em><b>Super Entity</b></em>' reference feature.
+     * The meta object literal for the '<em><b>Super Types</b></em>' reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference CLASS__SUPER_ENTITY = eINSTANCE.getClass_SuperEntity();
+    EReference CLASS__SUPER_TYPES = eINSTANCE.getClass_SuperTypes();
 
     /**
      * The meta object literal for the '<em><b>Attributes</b></em>' containment reference list feature.
