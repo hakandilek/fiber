@@ -1,0 +1,43 @@
+grammar com.minimalabs.fiber.Fiber with org.eclipse.xtext.common.Terminals
+
+generate fiber "http://www.minimalabs.com/fiber/Fiber"
+
+Model:
+  (types+=Type)*
+  (services+=Service)*;
+  
+Type:
+  SimpleType|Class|Enumeration;
+
+SimpleType:
+  "type" name=ID ("is" mappedType=TypeId)?;
+
+TypeId:
+  name=ID ("." ID)*;
+
+Class:
+  "class" name=ID ("extends" superEntity=[Class])? "{" (attributes+=Attribute)* "}";
+
+Attribute:
+  type=[Type] (manyReference=AttributeManyReference)? name=ID;
+
+enum AttributeManyReference: 
+  NONE | WEAK = "*" | STRONG = "#";
+
+Enumeration:
+  "enum" name=ID "{" (literals+=EnumerationLiteral)* "}";
+
+EnumerationLiteral:
+  name=ID "(" ordinal=INT ")";
+  
+Service:
+  "service" name=ID "{" (methods+=Method)* "}";
+
+Method:
+  returnType=[Type] name=ID "(" (parameters+=Parameter)? ("," parameters+=Parameter)* ")";
+
+Parameter:
+  type=[Type] name=ID;
+
+
+  	
